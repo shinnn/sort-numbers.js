@@ -1,6 +1,6 @@
 {
   "name": "sort-numbers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sort numbers in ascending or descending order",
   "main": "./dist/sort-numbers-cjs.js",
   "bin": "cli.js",
