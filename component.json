@@ -1,0 +1,21 @@
+{
+  "name": "sort-numbers",
+  "version": "1.0.0",
+  "repository": "shinnn/sort-numbers.js",
+  "description": "Sort numbers in ascending or descending order",
+  "keywords": [
+    "number",
+    "array",
+    "sort",
+    "order",
+    "ascending",
+    "asc",
+    "descending",
+    "desc"
+  ],
+  "main": "dist/sort-numbers-cjs.js",
+  "scripts": [
+    "dist/sort-numbers-cjs.js"
+  ],
+  "license": "MIT"
+}
