@@ -19,12 +19,12 @@ function assertIsNumber(maybeNumber) {
 
 function isLargerThanNext(current, next) {
   assertIsNumber(current);
-  return current > next;
+  return current - next;
 }
 
 function isSmallerThanNext(current, next) {
   assertIsNumber(current);
-  return current < next;
+  return next - current;
 }
 
 function sortNumbers(arr) {

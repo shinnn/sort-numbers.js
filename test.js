@@ -17,8 +17,9 @@ test('sortNumbers()', function(t) {
   );
 
   t.deepEqual(
-    sortNumbers([0, -1, 1, 0]), [-1, 0, 0, 1],
-    'should sort numbers even if the array includes duplicates.'
+    sortNumbers(
+      [1, 0, 3, 4, 7, 98, 1, 0, 9, 4, 28]), [0, 0, 1, 1, 3, 4, 4, 7, 9, 28, 98],
+      'should sort numbers even if the array includes duplicates.'
   );
 
   t.deepEqual(sortNumbers([]), [], 'should return the empty array as it is.');
