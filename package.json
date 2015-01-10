@@ -60,5 +60,11 @@
     "tape": "^3.0.3",
     "tiny-npm-license": "^1.0.0",
     "to-camel-case": "^0.2.1"
+  },
+  "jscsConfig": {
+    "preset": "google",
+    "maximumLineLength": 98,
+    "requireBlocksOnNewline": true,
+    "validateLineBreaks": "LF"
   }
 }
