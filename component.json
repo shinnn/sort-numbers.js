@@ -17,5 +17,8 @@
   "scripts": [
     "dist/sort-numbers-cjs.js"
   ],
+  "files": [
+    "LICENSE"
+  ],
   "license": "MIT"
 }

@@ -1,6 +1,5 @@
 {
   "name": "sort-numbers",
-  "version": "1.0.1",
   "description": "Sort numbers in ascending or descending order",
   "keywords": [
     "number",
@@ -28,12 +27,11 @@
   "ignore": [
     "**/.*",
     "*.js",
+    "*.json",
     "*.yml",
     "components",
-    "component.json",
     "dist/sort-numbers-cjs.js",
     "node_modules",
-    "package.json",
     "src"
   ]
 }
