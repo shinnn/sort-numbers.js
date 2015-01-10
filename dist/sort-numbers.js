@@ -5,15 +5,9 @@
 !function() {
 'use strict';
 
-function assertIsArray(maybeArr) {
-  if (!Array.isArray(maybeArr)) {
-    throw new TypeError(maybeArr + ' is not an array.');
-  }
-}
-
-function assertIsNumber(maybeNumber) {
-  if (typeof maybeNumber !== 'number' || maybeNumber !== maybeNumber) {
-    throw new TypeError('All elements of the array should be number.');
+function assertIsNumber(val) {
+  if (typeof val !== 'number' || val !== val) {
+    throw new TypeError('Every element in the array must be a number.');
   }
 }
 
@@ -27,24 +21,31 @@ function isSmallerThanNext(current, next) {
   return next - current;
 }
 
-function sortNumbers(arr) {
-  assertIsArray(arr);
+function main(arr, compareFn) {
+  if (!Array.isArray(arr)) {
+    throw new TypeError(
+      arr +
+      ' is not an array. The first argument to sortNumber must be an array.'
+    );
+  }
+
   if (arr.length === 0) {
     return [];
   }
+
   assertIsNumber(arr[arr.length - 1]);
-  return arr.sort(isLargerThanNext);
+
+  return arr.sort(compareFn);
+}
+
+function sortNumbers(arr) {
+  return main(arr, isLargerThanNext);
 }
 
 sortNumbers.asc = sortNumbers;
 
 sortNumbers.desc = function sortNumbersDesc(arr) {
-  assertIsArray(arr);
-  if (arr.length === 0) {
-    return [];
-  }
-  assertIsNumber(arr[arr.length - 1]);
-  return arr.sort(isSmallerThanNext);
+  return main(arr, isSmallerThanNext);
 };
 
 window.sortNumbers = sortNumbers;
