@@ -1,9 +1,11 @@
 # sort-numbers.js
 
+[![NPM version](https://img.shields.io/npm/v/sort-numbers.svg?style=flat)](https://www.npmjs.com/package/sort-numbers)
+[![Bower version](https://img.shields.io/bower/v/sort-numbers.svg?style=flat)](https://github.com/shinnn/sort-numbers.js/releases)
 [![Build Status](https://travis-ci.org/shinnn/sort-numbers.js.svg?branch=master)](https://travis-ci.org/shinnn/sort-numbers.js)
 [![Build status](https://ci.appveyor.com/api/projects/status/taowvn86fmy1s21y?svg=true)](https://ci.appveyor.com/project/ShinnosukeWatanabe/sort-numbers-js)
-[![Coverage Status](https://img.shields.io/coveralls/shinnn/sort-numbers.js.svg)](https://coveralls.io/r/shinnn/sort-numbers.js)
-[![devDependency Status](https://david-dm.org/shinnn/sort-numbers.js/dev-status.svg)](https://david-dm.org/shinnn/sort-numbers.js#info=devDependencies)
+[![Coverage Status](https://img.shields.io/coveralls/shinnn/sort-numbers.js.svg?style=flat)](https://coveralls.io/r/shinnn/sort-numbers.js)
+[![devDependency Status](https://img.shields.io/david/dev/shinnn/sort-numbers.js.svg?style=flat&label=devDeps)](https://david-dm.org/shinnn/sort-numbers.js#info=devDependencies)
 
 Sort numbers in ascending or descending order
 
@@ -16,13 +18,12 @@ sortNumbers.desc([ 0.45, Infinity, -2]); //=> [Infinity, 0.45, -2]
 
 ### Package managers
 
-#### [npm](https://www.npmjs.org/) [![NPM version](https://badge.fury.io/js/sort-numbers.svg)](https://www.npmjs.org/package/sort-numbers)
-
+#### [npm](https://www.npmjs.org/)
 ```sh
 npm install sort-numbers
 ```
 
-#### [Bower](http://bower.io/) [![Bower version](https://badge.fury.io/bo/sort-numbers.svg)](https://github.com/shinnn/sort-numbers.js/releases)
+#### [Bower](http://bower.io/)
 
 ```sh
 bower install sort-numbers
@@ -87,7 +88,7 @@ An alias to `sortNumbers`.
 
 ## CLI
 
-You can use this module as a CLI tool by installing it [globally](https://www.npmjs.org/doc/files/npm-folders.html#global-installation).
+You can use this module as a CLI tool by installing it [globally](https://docs.npmjs.com/files/folders#global-installation).
 
 ```sh
 npm install -g sort-numbers
