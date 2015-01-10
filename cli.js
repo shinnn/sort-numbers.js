@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /*!
  * sort-numbers | MIT (c) Shinnosuke Watanabe
  * https://github.com/shinnn/sort-numbers.js
@@ -24,27 +25,27 @@ var argv = require('minimist')(process.argv.slice(2).filter(function(arg) {
   boolean: ['desc', 'help', 'version']
 });
 
-var pkg = require('./package.json');
-
 function help() {
-  var chalk = require('chalk');
+  var sumUp = require('sum-up');
+  var yellow = require('chalk').yellow;
+
+  var pkg = require('./package.json');
 
   console.log([
-    chalk.cyan(pkg.name) + chalk.gray(' v' + pkg.version),
-    pkg.description,
+    sumUp(pkg),
     '',
     'Usage: ' + pkg.name + ' <number0> [<number1> <number2> ...]',
     '',
     'Options:',
-    chalk.yellow('--desc,    -d') + '  Sort numbers in descending order (ascending order by default)',
-    chalk.yellow('--help,    -h') + '  Print usage information',
-    chalk.yellow('--version, -v') + '  Print version',
+    yellow('--desc,    -d') + '  Sort numbers in descending order (ascending order by default)',
+    yellow('--help,    -h') + '  Print usage information',
+    yellow('--version, -v') + '  Print version',
     ''
   ].join('\n'));
 }
 
 if (argv.version) {
-  console.log(pkg.version);
+  console.log(require('./package.json').version);
 
 } else if (argv.help) {
   help();
