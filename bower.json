@@ -27,7 +27,6 @@
   "ignore": [
     "**/.*",
     "*.js",
-    "*.json",
     "*.yml",
     "components",
     "dist/sort-numbers-cjs.js",
