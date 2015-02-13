@@ -44,12 +44,12 @@
     "sum-up": "^1.0.0"
   },
   "devDependencies": {
-    "gulp": "^3.8.10",
+    "gulp": "^3.8.11",
     "gulp-footer": "^1.0.5",
     "gulp-header": "^1.2.2",
     "gulp-jscs": "^1.4.0",
-    "gulp-jshint": "^1.9.0",
-    "gulp-jsonlint": "^1.0.1",
+    "gulp-jshint": "^1.9.2",
+    "gulp-jsonlint": "^1.0.2",
     "gulp-load-plugins": "^0.8.0",
     "gulp-rename": "^1.2.0",
     "istanbul": "^0.3.5",
@@ -57,7 +57,7 @@
     "jshint-stylish": "^1.0.0",
     "merge-stream": "^0.1.7",
     "rimraf": "^2.2.8",
-    "tape": "^3.0.3",
+    "tape": "^3.5.0",
     "tiny-npm-license": "^1.0.0",
     "to-camel-case": "^0.2.1"
   },
