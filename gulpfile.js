@@ -1,16 +1,17 @@
 /*jshint unused:true */
 'use strict';
 
+var pkg = require('./package.json');
+
 var exec = require('child_process').exec;
 
-var $ = require('gulp-load-plugins')();
+var $ = require('gulp-load-plugins')({config: pkg});
 var gulp = require('gulp');
 var mergeStream = require('merge-stream');
 var rimraf = require('rimraf');
 var stylish = require('jshint-stylish');
 var toCamelCase = require('to-camel-case');
 
-var pkg = require('./package.json');
 var bower = require('./bower.json');
 var funName = toCamelCase(pkg.name);
 var banner = require('tiny-npm-license')(pkg);
@@ -24,6 +25,7 @@ gulp.task('lint', function() {
     gulp.src('*.json')
       .pipe($.jsonlint())
       .pipe($.jsonlint.reporter())
+      .pipe($.jsonlint.reporter('fail'))
   );
 });
 
