@@ -6,8 +6,7 @@
   "bin": "cli.js",
   "files": [
     "cli.js",
-    "dist/sort-numbers-cjs.js",
-    "LICENSE.md"
+    "dist/sort-numbers-cjs.js"
   ],
   "scripts": {
     "test": "gulp test",
@@ -39,9 +38,9 @@
     "client-side"
   ],
   "dependencies": {
-    "chalk": "^0.5.1",
+    "chalk": "^1.0.0",
     "minimist": "^1.1.0",
-    "sum-up": "^1.0.0"
+    "sum-up": "^1.0.1"
   },
   "devDependencies": {
     "gulp": "^3.8.11",
@@ -52,9 +51,9 @@
     "gulp-jsonlint": "^1.0.2",
     "gulp-load-plugins": "^0.8.0",
     "gulp-rename": "^1.2.0",
-    "istanbul": "^0.3.5",
+    "istanbul": "^0.3.6",
     "istanbul-coveralls": "^1.0.1",
-    "jshint-stylish": "^1.0.0",
+    "jshint-stylish": "^1.0.1",
     "merge-stream": "^0.1.7",
     "rimraf": "^2.2.8",
     "tape": "^3.5.0",
