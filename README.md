@@ -1,11 +1,11 @@
 # sort-numbers.js
 
-[![NPM version](https://img.shields.io/npm/v/sort-numbers.svg?style=flat)](https://www.npmjs.com/package/sort-numbers)
-[![Bower version](https://img.shields.io/bower/v/sort-numbers.svg?style=flat)](https://github.com/shinnn/sort-numbers.js/releases)
+[![NPM version](https://img.shields.io/npm/v/sort-numbers.svg)](https://www.npmjs.com/package/sort-numbers)
+[![Bower version](https://img.shields.io/bower/v/sort-numbers.svg)](https://github.com/shinnn/sort-numbers.js/releases)
 [![Build Status](https://travis-ci.org/shinnn/sort-numbers.js.svg?branch=master)](https://travis-ci.org/shinnn/sort-numbers.js)
 [![Build status](https://ci.appveyor.com/api/projects/status/taowvn86fmy1s21y?svg=true)](https://ci.appveyor.com/project/ShinnosukeWatanabe/sort-numbers-js)
-[![Coverage Status](https://img.shields.io/coveralls/shinnn/sort-numbers.js.svg?style=flat)](https://coveralls.io/r/shinnn/sort-numbers.js)
-[![devDependency Status](https://img.shields.io/david/dev/shinnn/sort-numbers.js.svg?style=flat&label=devDeps)](https://david-dm.org/shinnn/sort-numbers.js#info=devDependencies)
+[![Coverage Status](https://img.shields.io/coveralls/shinnn/sort-numbers.js.svg)](https://coveralls.io/r/shinnn/sort-numbers.js)
+[![devDependency Status](https://img.shields.io/david/dev/shinnn/sort-numbers.js.svg?label=devDeps)](https://david-dm.org/shinnn/sort-numbers.js#info=devDependencies)
 
 Sort numbers in ascending or descending order
 
@@ -119,6 +119,6 @@ yields:
 
 ## License
 
-Copyright (c) 2014 [Shinnosuke Watanabe](https://github.com/shinnn)
+Copyright (c) 2014 - 2015 [Shinnosuke Watanabe](https://github.com/shinnn)
 
 Licensed under [the MIT License](https://github.com/shinnn/sort-numbers/blob/master/LICENSE).
